@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>INTER App</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+    <style>
+      body {
+        margin: 0;
+        font-family: "Inter", sans-serif;
+        background-color: #0d0d0d;
+        color: #ffffff;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 2rem;
+      }
+
+      header {
+        text-align: center;
+        margin-bottom: 2rem;
+      }
+
+      header img {
+        max-width: 120px;
+        margin-bottom: 1rem;
+        object-fit: contain;
+      }
+
+      h1 {
+        font-size: 1.6rem;
+        font-weight: 600;
+        margin: 1rem 0;
+      }
+
+      .download-section {
+        background-color: #1a1a1a;
+        padding: 2rem;
+        border-radius: 12px;
+        text-align: center;
+        margin-bottom: 2rem;
+        max-width: 100%;
+        width: 100%;
+      }
+
+      .btn-download {
+        display: inline-block;
+        margin-top: 1rem;
+        padding: 1rem 2rem;
+        background-color: #ed1c24;
+        color: white;
+        font-weight: 600;
+        border: none;
+        border-radius: 8px;
+        text-decoration: none;
+        transition: background-color 0.3s;
+      }
+
+      .btn-download:hover {
+        background-color: #c1141b;
+      }
+
+      video {
+        max-width: 100%;
+        border-radius: 12px;
+        box-shadow: 0 0 12px rgba(255, 255, 255, 0.1);
+        margin-top: 1rem;
+      }
+
+      footer {
+        margin-top: 2rem;
+        font-size: 0.85rem;
+        color: #aaaaaa;
+        text-align: center;
+      }
+
+      /* Estilos para pantallas pequeñas */
+      @media (max-width: 600px) {
+        header img {
+          max-width: 100px;
+        }
+
+        h1 {
+          font-size: 1.4rem;
+        }
+
+        .btn-download {
+          padding: 0.8rem 1.5rem;
+        }
+
+        video {
+          margin-top: 1rem;
+          max-width: 100%;
+          border-radius: 10px;
+        }
+      }
+
+      /* Estilos para pantallas grandes */
+      @media (min-width: 768px) {
+        .download-section {
+          padding: 3rem;
+        }
+
+        .btn-download {
+          padding: 1rem 3rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/3/36/Inter_logo.png" alt="Logo INTER" />
+      <h1>Descarga la app INTER</h1>
+    </header>
+
+    <section class="download-section">
+      <p>Instala la aplicación en tu dispositivo Android:</p>
+      <a href="https://drive.google.com/uc?export=download&id=1cdHiGwp_LRE8jiJtOdoJPeZU8C2EPCZn" class="btn-download" target="_blank">Descargar APK</a>
+    </section>
+
+    <section style="max-width: 800px; width: 100%">
+      <h2 style="text-align: center">Guía de instalación</h2>
+      <video controls>
+        <source src="./assets/tutorial.mp4" type="video/mp4" />
+        Tu navegador no soporta video.
+      </video>
+    </section>
+
+    <footer>© 2025 INTER. Todos los derechos reservados.</footer>
+  </body>
+</html>
